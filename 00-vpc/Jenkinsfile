@@ -44,7 +44,7 @@ pipeline {
                             terraform destroy -auto-approve
                         fi
                     """
-                }
+                } 
             }
         }
         stage ('Trigger SG') {
