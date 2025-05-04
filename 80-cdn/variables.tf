@@ -21,5 +21,5 @@ variable "frontend_tags" {
 }
 
 variable "zone_name" {
-    default = "doddapaneni.shop"
+    default = "daws81s.space"
 }

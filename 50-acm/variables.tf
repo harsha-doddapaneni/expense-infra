@@ -16,9 +16,9 @@ variable "common_tags" {
 
 
 variable "zone_name" {
-    default = "doddapaneni.shop"
+    default = "daws81s.space"
 }
 
 variable "zone_id" {
-    default = "Z0486123205W1JWLD2711"
+    default = "Z04180323PZ2QTLJV7PXL"
 }
