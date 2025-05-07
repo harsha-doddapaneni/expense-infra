@@ -22,5 +22,5 @@ variable "ingress_alb_tags" {
 
 
 variable "zone_name" {
-    default = "daws81s.space"
+    default = "doddapaneni.shop"
 }
