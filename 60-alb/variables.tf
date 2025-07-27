@@ -20,7 +20,6 @@ variable "ingress_alb_tags" {
     }
 }
 
-
 variable "zone_name" {
     default = "doddapaneni.shop"
 }
