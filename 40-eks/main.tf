@@ -1,6 +1,10 @@
 resource "aws_key_pair" "eks" {
   key_name   = "eks"
-  public_key = file(pathexpand("~/.ssh/eks.pub"))
+  # you can paste the public key directly like this
+  #public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL6ONJth+DzeXbU3oGATxjVmoRjPepdl7sBuPzzQT2Nc sivak@BOOK-I6CR3LQ85Q"
+  //public_key = file("~/.ssh/eks.pub")
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCIVuBNLK+INiJezk1EO68MmkuhOugXTQqeYFUolkFncXQpd4twb5FOBdbO4NJKqH/XDhBDXw7I9GaWsN9efA7HjikcgoxugTh6R9azazv+TfJnFCYlHbnc66HrFpuZRqaaFwozyb7ri5pg6B4BTbbozuEoz5Rd9/jKzf4vJrhpKrFch7RKOWpL1Vtvx68BRsGKDJ4BBmxE7x3ipQ6yMXKaiVVkuNylml+ItEN5H0FGYXiOeln2oT2CPfkLJw3emoCzL/v0YofbdOvarBVegstU0cUhAkb/IBDuwrOHVUa//zokJP/ORi1hiTwKTwQy9ktwGJO4WcSLrkXU6qjje9c89r/VdW7FZdhQH9nqgRhQlywhz/YeQ8zdAUIwVoi2jEfrhs7iIBHER5CSoYeiwh9D+eDnyvBgTbLcv5UzM1qE8Ivx8snB1KvbYwmGywBqwxSyOxp+FYlquhMMmALFV4JMWa1nV0YA0nBUM+Mj709OkNjuLL1WUFdllr382zXxwsL3j1ST7vnD0r6wfMRzI2HLFIiUK2QPenik3tD58EFOQeUcXPEt7ac0qEcVxOoHuL0Ydi0VFwOYVn8eew/AMIzuLpSUz4FEdT9Jr9A27UGd1axlUSKaWQ97xk98L+zyGaNMzD2rZXOY0/O3dZdlPopMcprYT7yLi2BejMdAzW8Uw== eks-key"
+  # ~ means windows home directory
 }
 
 module "eks" {
